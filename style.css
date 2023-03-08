@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+
+/* || RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Outfit", sans-sarif;
+  --FS: 17px;
+
+  /* COLORS */
+  --BGCOLOR: hsl(212, 45%, 89%);
+  --BODY-BGCOLOR: hsl(0, 0%, 100%);
+  --HEADER-COLOR: hsl(218, 44%, 22%);
+  --BODY-COLOR: hsl(220, 15%, 55%);
+}
+
+html {
+  font-family: var(--FF);
+  font-size: var(--FS);
+  background-color: var(--BGCOLOR);
+}
+
+.main {
+  margin: 3.5em auto;
+  max-width: 325px;
+  min-height: 80vh;
+  background-color: var(--BODY-BGCOLOR);
+  border-radius: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.hero {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+.img {
+  border-radius: 15px;
+  margin-bottom: 0.3em;
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+}
+
+.h1 {
+  color: var(--HEADER-COLOR);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+}
+
+.paragraph {
+  color: var(--BODY-COLOR);
+  font-size: var(--FS);
+  font-weight: 400;
+  margin-bottom: 0.8em;
+}
